@@ -1,6 +1,6 @@
 package com.github.berrycontrol.driver.api;
 
-import org.pf4j.Plugin;
+import org.pf4j.ExtensionPoint;
 
 import java.util.List;
 import java.util.UUID;
@@ -9,7 +9,7 @@ public abstract class BerryHubDeviceDriverDescriptor<
         DeviceDriver extends BerryHubDeviceDriver<DeviceCommand>,
         DeviceInfo extends BerryHubDeviceInfo,
         DeviceCommand extends BerryHubDeviceCommand
-    > extends Plugin {
+    > implements ExtensionPoint {
 
     /**
      * Authentication method when pairing with the device.
