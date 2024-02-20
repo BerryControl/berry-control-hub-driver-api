@@ -38,28 +38,28 @@ public abstract class BerryHubDeviceDriverDescriptor<
         USER_AND_PASSWORD
     }
 
-    private final UUID pluginId;
+    private final UUID driverId;
     private final String displayName;
     private final String description;
 
     /**
      * Constructor.
      *
-     * @param pluginId      the plugin ID; this ID must be constant.
+     * @param driverId      the driver ID; this ID must be constant.
      * @param displayName   the display name
      * @param description   the description
      */
-    public BerryHubDeviceDriverDescriptor(UUID pluginId, String displayName, String description) {
-        this.pluginId = pluginId;
+    public BerryHubDeviceDriverDescriptor(UUID driverId, String displayName, String description) {
+        this.driverId = driverId;
         this.displayName = displayName;
         this.description = description;
     }
 
     /**
-     * @return the plugin ID
+     * @return the driver ID
      */
-    public UUID getPluginId() {
-        return pluginId;
+    public UUID getDriverId() {
+        return driverId;
     }
 
     /**
