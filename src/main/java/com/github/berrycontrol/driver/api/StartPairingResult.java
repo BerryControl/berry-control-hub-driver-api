@@ -17,7 +17,7 @@ public class StartPairingResult {
         return pairingRequestId;
     }
 
-    public boolean isDeviceProvidesPin() {
+    public boolean deviceProvidesPin() {
         return deviceProvidesPin;
     }
 }
