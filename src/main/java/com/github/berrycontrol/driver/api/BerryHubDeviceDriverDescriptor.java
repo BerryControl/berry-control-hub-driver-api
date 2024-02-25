@@ -105,9 +105,9 @@ public abstract class BerryHubDeviceDriverDescriptor<
      *
      * @param deviceInfo the device info of the device to pair with
      * @param remoteName the name of the remote
-     * @return pairing request ID
+     * @return pairing request result
      */
-    public abstract String startPairing(DeviceInfo deviceInfo, String remoteName) throws BerryHubDeviceDriverException;
+    public abstract StartPairingResult startPairing(DeviceInfo deviceInfo, String remoteName) throws BerryHubDeviceDriverException;
 
     /**
      * Finalize the pairing process.
