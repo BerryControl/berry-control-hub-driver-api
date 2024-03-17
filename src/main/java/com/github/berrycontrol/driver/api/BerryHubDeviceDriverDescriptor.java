@@ -115,6 +115,7 @@ public abstract class BerryHubDeviceDriverDescriptor<
      * @param pairingRequest    the pairing request id
      * @param pin               the pin for pairing with the device
      * @param deviceProvidesPin Flag that determines whether the device provides a pin.
+     * @return true if the device has paired, false otherwise
      */
     public abstract boolean finalizePairing(String pairingRequest, String pin, boolean deviceProvidesPin) throws BerryHubDeviceDriverException;
 

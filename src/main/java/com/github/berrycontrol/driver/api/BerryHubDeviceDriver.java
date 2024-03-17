@@ -54,4 +54,9 @@ public interface BerryHubDeviceDriver<Command extends BerryHubDeviceCommand> {
      * @param command the command that shall be executed
      */
     void execute(Command command);
+
+    /**
+     * @return true if the device is ready, otherwise false
+     */
+    boolean isDeviceReady();
 }
